@@ -340,12 +340,15 @@
   }
 
   .sec2Content .box::before {
-    content: url(./media/services/boxBefore.png);
+    content: "";
     position: absolute;
-    top: 0;
-    left: 5px;
+    background-color: #002f93;
+    border-radius: 20px;
+    width: 80%;
+    height: 100%;
+    bottom: -7%;
+    left: 0%;
     z-index: -1;
-    width: 100% !important;
   }
 
   .sec2Content .box {

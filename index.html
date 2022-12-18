@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css"
     />
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <header>
@@ -22,12 +22,12 @@
         <a href="/"><img src="./media/LOGO.png" alt="" /></a>
       </div>
       <ul class="navigations">
-        <li><a class="active" href="/">Ana səhifə</a></li>
-        <li><a href="/services.html">Xidmətlər və həllər</a></li>
-        <li><a href="/about.html">Haqqımızda</a></li>
-        <li><a href="/portfolio.html">Portfolio</a></li>
-        <li><a href="/blog.html">Bloq</a></li>
-        <li><a href="/contact.html">Əlaqə</a></li>
+        <li class="links"><a href="#homepage">Ana səhifə</a></li>
+        <li class="links"><a href="#services">Xidmətlər və həllər</a></li>
+        <li class="links"><a href="#about">Haqqımızda</a></li>
+        <li class="links"><a href="#portfolio">Portfolio</a></li>
+        <li class="links"><a href="#blog">Bloq</a></li>
+        <li class="links"><a href="#contact">Əlaqə</a></li>
         <ul class="has-dropdown">
           <img id="az" src="./media/az.png" alt="" />
           <img id="en" class="hide" src="./media/en.png" alt="" />
@@ -45,12 +45,12 @@
         </ul>
       </ul>
       <ul class="mobileNav">
-        <li><a class="active" href="/">Ana səhifə</a></li>
-        <li><a href="/services.html">Xidmətlər və həllər</a></li>
-        <li><a href="/about.html">Haqqımızda</a></li>
-        <li><a href="/portfolio.html">Portfolio</a></li>
-        <li><a href="/blog.html">Bloq</a></li>
-        <li><a href="/contact.html">Əlaqə</a></li>
+        <li class="links"><a href="#homepage">Ana səhifə</a></li>
+        <li class="links"><a href="#services">Xidmətlər və həllər</a></li>
+        <li class="links"><a href="#about">Haqqımızda</a></li>
+        <li class="links"><a href="#portfolio">Portfolio</a></li>
+        <li class="links"><a href="#blog">Bloq</a></li>
+        <li class="links"><a href="#contact">Əlaqə</a></li>
         <ul class="lang mobilehas-dropdown">
           <img id="mobileaz" src="./media/az.png" alt="" />
           <img id="mobileen" class="hide" src="./media/en.png" alt="" />
@@ -62,7 +62,9 @@
               </a>
             </li>
             <li>
-              <a href=""><img class="mobileaze" src="./media/az.png" alt="" /></a>
+              <a href=""
+                ><img class="mobileaze" src="./media/az.png" alt=""
+              /></a>
             </li>
           </ul>
         </ul>
@@ -74,7 +76,7 @@
       </div>
     </header>
 
-    <div class="section1">
+    <div class="sections section1" id="homepage">
       <img class="sec1Img" src="./media/homeBanner.png" alt="" />
       <div class="sec1Texts">
         <p>Lorem ipsum dolor sit amet</p>
@@ -82,47 +84,89 @@
           Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam
           nonummy
         </h3>
-        <button>Ətraflı</button>
+        <a href="#services"><button>Ətraflı</button></a>
       </div>
     </div>
 
-    <div class="section2">
+    <div class="sections section2" id="services">
       <img src="./media/sec2Bg.png" alt="" />
       <div class="section2Flex">
         <h3>Xidmətlər və Həllər</h3>
         <div class="sec2Content wrapper">
           <div class="box">
-            <div class="boxImg">
-              <img src="./media/services/box1.png" alt="" />
-            </div>
-            <div class="boxText">
-              <p>Tətbiqi Proqram təminatlarının hazırlanması</p>
+            <div class="boxInner">
+              <div class="boxImg">
+                <!-- <img src="./media/services/box1.png" alt="" /> -->
+                <lord-icon
+                  src="https://cdn.lordicon.com/txmlvqat.json"
+                  trigger="loop"
+                  delay="700"
+                  colors="primary:#012e93,secondary:#ebe6ef"
+                  style="width: 85px; height: 85px"
+                >
+                </lord-icon>
+              </div>
+              <div class="boxText">
+                <p>Tətbiqi Proqram təminatlarının hazırlanması</p>
+              </div>
             </div>
           </div>
           <div class="box">
-            <div class="boxImg">
-              <img src="./media/services/box2.png" alt="" />
+            <div class="boxInner">
+              <div class="boxImg">
+                <!-- <img src="./media/services/box2.png" alt="" /> -->
+                <lord-icon
+                  src="https://cdn.lordicon.com/lfqstkwj.json"
+                  trigger="loop"
+                  delay="700"
+                  colors="outline:#fff,primary:#002f93,secondary:#ebe6ef"
+                  style="width: 75px; height: 75px"
+                >
+                </lord-icon>
+              </div>
+              <div class="boxText">
+                <p>Elektron xidmətlərin hazırlanması</p>
+              </div>
             </div>
-            <div class="boxText"><p>Elektron xidmətlərin hazırlanması</p></div>
           </div>
           <div class="box">
-            <div class="boxImg">
-              <img src="./media/services/box3.png" alt="" />
+            <div class="boxInner">
+              <div class="boxImg">
+                <!-- <img src="./media/services/box3.png" alt="" /> -->
+                <lord-icon
+                  src="https://cdn.lordicon.com/iqocwzif.json"
+                  trigger="loop"
+                  delay="700"
+                  colors="primary:#002f93,secondary:#ffffff"
+                  style="width: 75px; height: 75px"
+                >
+                </lord-icon>
+              </div>
+              <div class="boxText"><p>Mobil tətbiqlərin hazırlanması</p></div>
             </div>
-            <div class="boxText"><p>Mobil tətbiqlərin hazırlanması</p></div>
           </div>
           <div class="box">
-            <div class="boxImg">
-              <img src="./media/services/box4.png" alt="" />
+            <div class="boxInner">
+              <div class="boxImg">
+                <!-- <img src="./media/services/box4.png" alt="" /> -->
+                <lord-icon
+                  src="https://cdn.lordicon.com/qbaenubu.json"
+                  trigger="loop"
+                  delay="700"
+                  colors="primary:#ffffff,secondary:#002f93"
+                  style="width: 75px; height: 75px"
+                >
+                </lord-icon>
+              </div>
+              <div class="boxText"><p>Saytların yaradılması</p></div>
             </div>
-            <div class="boxText"><p>Saytlarınyaradılması</p></div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section3">
-      <div class="sec3BgImages">
+    <div class="sections section3">
+      <div class="sec3BgImages" id="about">
         <img class="sec3Img" src="./media/sec3img.png" alt="" />
         <img class="sec3Bg" src="./media/sec3bg.png" alt="" />
       </div>
@@ -160,7 +204,7 @@
       </div>
     </div>
 
-    <div class="projectPage wrapper">
+    <div class="sections projectPage wrapper" id="portfolio">
       <h1>Proyektlər</h1>
       <div class="projectContainer">
         <div class="line"></div>
@@ -234,7 +278,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <div class="buttonDiv">
@@ -242,7 +285,7 @@
       </div>
     </div>
 
-    <div class="blogPage wrapper">
+    <div class="sections blogPage wrapper" id="blog">
       <h1>Bloq</h1>
       <div class="blogs">
         <div class="blogBox">
@@ -385,7 +428,7 @@
       </div>
     </div>
 
-    <div class="footerSection">
+    <div class="sections footerSection" id="contact">
       <!-- <img src="./media/footer.png" alt=""> -->
       <div class="footerContent">
         <div class="footerLogo">
@@ -466,5 +509,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
   </body>
 </html>

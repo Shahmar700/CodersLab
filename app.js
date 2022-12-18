@@ -44,6 +44,26 @@ navBtn.addEventListener("click", () => {
   navBtn.classList.toggle("barActive");
   mobileNav.classList.toggle("navActive");
 });
+// Scroll Function
+const li = document.querySelectorAll(".links");
+const sec = document.querySelectorAll(".sections");
+
+const activeMenu = () => {
+  let len = sec.length;
+  while (--len && window.scrollY + 500 < sec[len].offsetTop) {}
+  li.forEach((ltx) => ltx.classList.remove("active"));
+  li[len].classList.add("active");
+};
+activeMenu();
+window.addEventListener("scroll", activeMenu);
+li.forEach((li) => {
+  li.addEventListener("click", () => {
+    li.classList.toggle("active");
+    navBtn.classList.remove("barActive");
+    mobileNav.classList.remove("navActive");
+  });
+});
+// -----------------Scroll Function end-----------
 
 // ---------------------------
 let noOfCharac = 150;

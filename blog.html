@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css"
+    />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="logoDiv">
+        <a href="/"><img src="./media/LOGO.png" alt="" /></a>
+      </div>
+      <ul class="navigations">
+        <li><a href="/">Ana səhifə</a></li>
+        <li><a href="/services.html">Xidmətlər və həllər</a></li>
+        <li><a href="/about.html">Haqqımızda</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a class="active" href="/blog.html">Bloq</a></li>
+        <li><a href="/contact.html">Əlaqə</a></li>
+        <ul class="has-dropdown">
+          <img id="az" src="./media/az.png" alt="" />
+          <img id="en" class="hide" src="./media/en.png" alt="" />
+          <i class="fa-solid fa-sort-down"></i>
+          <ul class="dropdown">
+            <li>
+              <a href="">
+                <img class="eng" src="./media/en.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href=""><img class="aze" src="./media/az.png" alt="" /></a>
+            </li>
+          </ul>
+        </ul>
+      </ul>
+      <ul class="mobileNav">
+        <li><a href="/">Ana səhifə</a></li>
+        <li><a href="/services.html">Xidmətlər və həllər</a></li>
+        <li><a href="/about.html">Haqqımızda</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li><a class="active" href="/blog.html">Bloq</a></li>
+        <li><a href="/contact.html">Əlaqə</a></li>
+        <ul class="lang mobilehas-dropdown">
+          <img id="mobileaz" src="./media/az.png" alt="" />
+          <img id="mobileen" class="hide" src="./media/en.png" alt="" />
+          <i class="fa-solid fa-sort-down"></i>
+          <ul class="mobiledropdown">
+            <li>
+              <a href="">
+                <img class="mobileeng" src="./media/en.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href=""><img class="mobileaze" src="./media/az.png" alt="" /></a>
+            </li>
+          </ul>
+        </ul>
+      </ul>
+      <div class="navBtn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <script src="app.js"></script>
+  </body>
+</html>
